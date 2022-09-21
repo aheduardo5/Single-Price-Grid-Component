@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --LightCyan: hsl(179, 65%, 47%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --BlackBrighttYellow: hsl(71, 62%, 40%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray);
+    font-size: 16px;
+}
+/* MOBILE VIEW */
+.main-container{
+    background-color:white;
+    width: 313px;
+    height: 730px;
+    margin: 70px auto 70px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* OUR COMUNITY */
+.our-comunity{
+    padding: 8px 24px 24px 24px;
+    height: 270px;
+    box-sizing: border-box;
+}
+.our-comunity h2.title{
+    font-size: 1.3em;
+    color: var(--Cyan);
+}
+
+.our-comunity h2.promo {
+    font-size: 1em;
+    color: var(--BrightYellow);
+}
+
+.our-comunity p{
+    font-size: .9em;
+    color: var(--GrayishBlue);
+    line-height: 1.5em;
+}
+/* MONTLY SUBSCCRIPTION */
+.montly-subcription{
+    background-color: var(--Cyan);
+    padding: 12px 24px 24px 24px;
+    height: 230px;
+    box-sizing: border-box;
+    color: white;
+}
+.montly-subcription h2{
+    font-size: 1.2em;
+}
+.montly-subcription .price{
+    font-size: 2em;
+}
+.montly-subcription .payment {
+    padding-left: 5px;
+}
+.montly-subcription p{
+    margin-top: 8px;
+}
+
+.montly-subcription button{
+    width: 264px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: var(--BrightYellow);
+    border-style: none;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 10px;
+    box-shadow: 2px 8px 16px -2px rgba(33,33,33,0.75); 
+}
+.montly-subcription button:hover{
+    background-color: var(--BlackBrighttYellow);
+    transition: 300ms;
+}
+/* WHY US */
+.why-us{
+    background-color: var(--LightCyan);
+    padding: 8px 24px 24px 24px;
+    height: 230px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.why-us h2{
+    font-size: 1.2em;
+}
+
+.why-us ul{
+    list-style: none;
+    padding: 0;
+    font-size: .8em;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+/*FOOTER*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width:680px){
+    .main-container{
+        width: 636px;
+        height: 476px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 180px auto 100px;
+    }
+    .our-comunity{
+        grid-column: 1/3;
+        height: 220px;
+        padding: 20px 35px;
+    }
+    .our-comunity h2.title{
+        font-size: 1.5em;
+    }
+    .our-comunity h2.promo{
+        font-size: 1.1em;
+    }
+    .our-comunity p{
+        font-size: 1em;
+        line-height: 1.9em;
+    }
+    .montly-subcription{
+        
+        height: 260px;
+    }
+    .montly-subcription h2{
+        font-size: 1.2em;
+    }
+    .montly-subcription p{
+        font-size: 1em;
+    }
+    .why-us{
+       
+        height: 260px;
+    }
+}
